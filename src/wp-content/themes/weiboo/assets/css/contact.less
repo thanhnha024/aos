@@ -1,0 +1,78 @@
+/*contact layout*/
+input[type="submit"]{
+    border: none;
+    padding: 10px 18px;
+}
+
+body div textarea{
+    border: 1px solid #f1f1f1; 
+    padding: 10px 18px;
+    height: 160px;
+    &:focus{
+        outline:1px solid #000;
+    }
+}
+
+input[type="text"], 
+input[type="number"], 
+input[type="email"],  
+input[type="url"], 
+select,
+input[type="password"]{
+    height: 48px;
+    padding: 10px 18px;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 30px;
+    &:focus{
+        outline:1px solid #000;
+    }
+}
+.wp-block-search .wp-block-search__button {
+    margin-left: 0;
+}
+.wp-block-search {
+    margin-bottom: 20px;
+}
+.wp-block-archives, .wp-block-categories{
+    select{
+        width: 400px;
+    }
+}
+
+.wp-block-group.has-background{
+    padding: 24px 30px 10px;
+    margin-bottom: 30px;
+}
+
+[type="search"]{
+    border: 1px solid #f1f1f1;
+    border-radius: 5px 0 0 5px;
+    padding: 10px 20px;
+    outline: none;
+}
+
+div textarea{
+	border: 1px solid #f1f1f1;
+   
+}
+input[type="submit"]{
+    background:@primaryColor;
+}
+div.wpcf7 {
+    .ajax-loader{
+        position: absolute;
+        top: 16px;
+        right: -40px;
+    }
+}
+
+
+div.wpcf7-validation-errors{
+    border-color: #ff0000;
+    color: #ff0000;
+}
+
+div.wpcf7-acceptance-missing{
+    border-color: #ff0000;
+    color: #ff0000;
+}

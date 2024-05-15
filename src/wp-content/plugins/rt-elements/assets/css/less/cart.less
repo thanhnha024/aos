@@ -1,0 +1,243 @@
+/*-----------------------------
+    Cart icon design
+-------------------------------*/
+.menu-cart-area {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    svg{
+        width: 18px;
+    }
+    .woocommerce-mini-cart__empty-message {
+        text-align: center;
+        text-transform: uppercase;
+        color: @titleColor;
+        position: relative;
+        padding-top: 50px;
+
+        &:before {
+            position: absolute;
+            content: "\f10f";
+            color: @titleColor;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 42px;
+            font-family: Flaticon;
+            font-size: 30px;
+            font-style: normal;
+        }
+    }
+    .widget_shopping_cart {
+        .cart_list {
+            li {
+                padding: 20px 30px;
+                border-bottom: 1px solid rgba(170, 170, 170, 0.25);
+
+                a {
+                    color: @bodyColor;
+
+                    img {
+                        width: 40px;
+                    }
+                }
+
+                .quantity {
+                    color: @titleColor;
+                }
+
+                a.remove {
+                    color: @titleColor;
+                    top: 19px;
+                }
+
+                &:first-child {
+                    padding-top: 0;
+
+                    a.remove {
+                        top: 0px;
+                    }
+                }
+            }
+        }
+        .total {
+            padding: 29px 0 0;
+            text-align: center;
+            border-top: none;
+        }
+    }
+    i {
+        cursor: pointer;
+        color: #28406d;
+        font-size: 15px;
+
+        &:before {
+            font-size: 15px;
+        }
+    }
+    span.icon-num {
+        border-radius: 50%;
+        font-size: 10px;
+        line-height: 15px;
+        min-height: 15px;
+        min-width: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        text-align: center;
+        margin-top: -15px;
+        right: 0px;
+    }
+    .woocommerce-mini-cart__buttons {
+        text-align: center;
+    }
+    .button.wc-forward {
+        padding: 9px 20px;
+        font-size: 12px;
+    }
+}
+.cart-icon-total-products{
+    font-size: 13px;
+    line-height: 20px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    width: 360px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    visibility: hidden;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    z-index: 999;
+    padding: 20px;
+    .close-cart{
+        cursor:pointer;
+    }
+   
+    .cart-header{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #E7E7E7;
+        .cart-heading {
+            font-size: 17px;
+            font-weight: 500;
+            color: #404040;
+            margin:0;
+            list-style: 20px;
+        }
+    }
+    .widget_shopping_cart {
+        margin-bottom: 0px;
+        h2.widgettitle{
+            display:none !important;
+        }
+
+        .quantity {
+            border: none;
+            padding: 3px 0 0 0;
+            display: block;
+        }
+    }
+
+    &.visible-cart{
+        visibility: visible !important;
+        transform: translate(0) !important;
+    }
+    .woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img{
+        width:70px;
+    }
+    .woocommerce.widget_shopping_cart .cart_list li{
+        border-bottom: 1px solid #E7E7E7;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+        padding-left: 35px;
+        &:last-child{
+            border:0;
+        }
+        a{
+            color:#404040;
+        }
+        a.remove{
+            line-height: 20px;
+            top:3px;
+        }
+        
+    }
+
+    .woocommerce.widget_shopping_cart{
+        .buttons{
+            a{
+                width: 100%;
+                text-align: center;
+                background: transparent;
+                border: 1px solid #040404;
+                color:#040404;
+                &:hover{
+                    color:#fff;
+                    background:@primaryColor;
+                    border-color:@primaryColor;
+                }
+                &.checkout{
+                    background-color: #040404;
+                    color:#fff;
+                    &:hover{
+                        color:#fff;
+                        background:@primaryColor;                       
+                    }
+                }
+            }
+        }
+    } 
+
+    .woocommerce-mini-cart__total.total{
+        padding-top: 30px;
+        strong{
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        .woocommerce-Price-amount{
+            float:right;
+            font-size: 18px;
+            color:#404040;
+            font-weight: 700;
+        }
+    }
+
+}
+
+.body-overlay-cart {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    pointer-events: none;
+    z-index: 9;
+    visibility: hidden;
+    opacity: 0;
+
+    &.overlayshow {
+        visibility: visible;
+        opacity: .5;
+        pointer-events: unset;
+    }
+}

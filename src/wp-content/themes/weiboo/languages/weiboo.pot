@@ -1,0 +1,782 @@
+# Copyright (C) 2022 ReacThemes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-09 08:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+#: 404.php:25
+msgid "404"
+msgstr ""
+
+#: 404.php:35
+msgid "oops! page not found"
+msgstr ""
+
+#: 404.php:44
+msgid "Or back to homepage"
+msgstr ""
+
+#: index.php:194
+msgctxt "Lees verder"
+msgid "Continue Reading"
+msgstr ""
+
+#: comments.php:23
+msgid "One comments on"
+msgstr ""
+
+#: comments.php:29
+msgid "comment on"
+msgstr ""
+
+#: comments.php:29
+msgid "comments title"
+msgstr ""
+
+#: comments.php:50
+msgid "Comments are closed."
+msgstr ""
+
+#: pagination.php:14
+msgid "Previous"
+msgstr ""
+
+#: pagination.php:26
+msgid "Next"
+msgstr ""
+
+#: functions.php:69
+msgid "Primary"
+msgstr ""
+
+#: search.php:23
+msgid "Nothing Found"
+msgstr ""
+
+#: searchform.php:11
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:13
+msgid "Searching..."
+msgstr ""
+
+#: single-events.php:53
+msgid "Start Date"
+msgstr ""
+
+#: single-events.php:61
+msgid "Start Time"
+msgstr ""
+
+#: single-events.php:69
+msgid "End Date"
+msgstr ""
+
+#: single-events.php:77
+msgid "End Time"
+msgstr ""
+
+#: single-events.php:85
+msgid "Location"
+msgstr ""
+
+#: single-events.php:109 archive.php:178 single-notices.php:61
+#: single-teams.php:169 template-parts/content.php:31
+msgid "Continue reading"
+msgstr ""
+
+#: single-events.php:120 single-notices.php:72 single-teams.php:180
+#: template-parts/content.php:43 template-parts/content-page.php:15
+#: template-parts/content-single.php:15 template-parts/post/content.php:67
+#: template-parts/post/content-aside.php:35
+#: template-parts/post/content-audio.php:73
+#: template-parts/post/content-image.php:72
+#: template-parts/post/content-gallery.php:72
+#: template-parts/post/content-link.php:46
+#: template-parts/post/content-quote.php:72
+#: template-parts/post/content-video.php:66
+msgid "Pages"
+msgstr ""
+
+#: single-teams.php:41
+msgid "Quick Contact"
+msgstr ""
+
+#: single-teams.php:106
+msgid "Professional Skills"
+msgstr ""
+
+#: single-teams.php:126
+msgid "Experience & Activities"
+msgstr ""
+
+#: inc/template-functions.php:62
+msgid "Google font: on or off"
+msgstr ""
+
+#: inc/template-functions.php:98
+msgid "read more"
+msgstr ""
+
+#: inc/template-functions.php:119
+msgid "Google Plus"
+msgstr ""
+
+#: inc/template-sidebar.php:10
+msgid "Sidebar"
+msgstr ""
+
+#: inc/template-sidebar.php:12 inc/template-sidebar.php:22
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/template-sidebar.php:20
+msgid "Off Canvas Sidebar"
+msgstr ""
+
+#: inc/template-sidebar.php:12
+msgid "This is sidebar area for blog post and single post."
+msgstr ""
+
+#: inc/template-sidebar.php:21
+msgid "Sidebar Shop"
+msgstr ""
+
+#: inc/template-sidebar.php:34
+msgid "Off canvas widget area"
+msgstr ""
+
+#: inc/template-sidebar.php:42
+msgid "Course Sidebar"
+msgstr ""
+
+#: inc/template-sidebar.php:44
+msgid "Course sidebar widget area."
+msgstr ""
+
+#: inc/template-sidebar.php:52
+msgid "Footer Top Subscribe"
+msgstr ""
+
+#: inc/template-sidebar.php:54
+msgid "This is the footer top widget area."
+msgstr ""
+
+#: inc/template-sidebar.php:65
+msgid "Footer One Widget Area"
+msgstr ""
+
+#: inc/template-sidebar.php:67
+msgid "Footer 1 Widget Here"
+msgstr ""
+
+#: inc/template-sidebar.php:75
+msgid "Footer Two Widget Area"
+msgstr ""
+
+#: inc/template-sidebar.php:77
+msgid "Footer 2 Widget Here"
+msgstr ""
+
+#: inc/template-sidebar.php:84
+msgid "Footer Three Widget Area"
+msgstr ""
+
+#: inc/template-sidebar.php:86
+msgid "Footer 3 Widget Here"
+msgstr ""
+
+#: inc/template-sidebar.php:94
+msgid "Footer Four Widget Area"
+msgstr ""
+
+#: inc/template-sidebar.php:96
+msgid "Footer 4 Widget Here"
+msgstr ""
+
+#: inc/template-sidebar.php:105
+msgid "Copyright Right"
+msgstr ""
+
+#: inc/template-sidebar.php:107
+msgid "Copyright Right widget area"
+msgstr ""
+
+#: inc/template-sidebar.php:87
+msgid "Add Footer Three Widget here"
+msgstr ""
+
+#: inc/template-sidebar.php:97 inc/template-sidebar.php:106
+#: inc/template-sidebar.php:115
+msgid "Add text box widgets area"
+msgstr ""
+
+#: inc/template-sidebar.php:105
+msgid "Copyright Menu"
+msgstr ""
+
+#: inc/template-tags.php:27
+msgid "Posted on"
+msgstr ""
+
+#: inc/template-tags.php:27
+msgid "post date"
+msgstr ""
+
+#: inc/template-tags.php:33
+msgid "by"
+msgstr ""
+
+#: inc/template-tags.php:33
+msgid "post author"
+msgstr ""
+
+#: inc/template-tags.php:53
+msgid "posted in"
+msgstr ""
+
+#: inc/template-tags.php:57
+msgid "list item separator"
+msgstr ""
+
+#: inc/template-tags.php:60
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:70
+msgid "Leave a Comment"
+msgstr ""
+
+#: inc/template-tags.php:87 template-parts/content-page.php:35
+#: template-parts/content-single.php:28 template-parts/events.php:35
+msgid "Edit"
+msgstr ""
+
+#: inc/page-header/breadcrumbs-404.php:15
+#: inc/page-header/breadcrumbs-404.php:39
+msgid "404."
+msgstr ""
+
+#: inc/page-header/breadcrumbs-blog.php:16
+msgid "All Blogs"
+msgstr ""
+
+#: inc/page-header/breadcrumbs-blog.php:38
+#: inc/page-header/breadcrumbs-blog.php:78
+#: inc/page-header/breadcrumbs-blog.php:118
+msgid "Blog"
+msgstr ""
+
+#: inc/page-header/breadcrumbs-search.php:14
+msgid "Search Results for:"
+msgstr ""
+
+#: inc/page-header/breadcrumbs-teams.php:33
+#: inc/page-header/breadcrumbs-teams.php:68
+#: inc/page-header/breadcrumbs-teams.php:102
+msgid "Team"
+msgstr ""
+
+#: inc/portfolio/single-gallery.php:54 inc/portfolio/single-slider.php:60
+#: inc/portfolio/single-standard.php:37
+msgid "Project Details"
+msgstr ""
+
+#: inc/portfolio/single-gallery.php:58 inc/portfolio/single-slider.php:64
+#: inc/portfolio/single-standard.php:41
+msgid "Category:"
+msgstr ""
+
+#: inc/portfolio/single-gallery.php:72 inc/portfolio/single-slider.php:78
+#: inc/portfolio/single-standard.php:55
+msgid "Client:"
+msgstr ""
+
+#: inc/portfolio/single-gallery.php:76 inc/portfolio/single-slider.php:82
+#: inc/portfolio/single-standard.php:59
+msgid "Location:"
+msgstr ""
+
+#: inc/portfolio/single-gallery.php:80 inc/portfolio/single-slider.php:86
+#: inc/portfolio/single-standard.php:63
+msgid "Completed Date:"
+msgstr ""
+
+#: inc/portfolio/single-gallery.php:84 inc/portfolio/single-slider.php:90
+#: inc/portfolio/single-standard.php:67
+msgid "Project Value:"
+msgstr ""
+
+#: inc/portfolio/single-gallery.php:87 inc/portfolio/single-slider.php:94
+#: inc/portfolio/single-standard.php:71
+msgid "Mananer:"
+msgstr ""
+
+#: inc/portfolio/single-gallery.php:91 inc/portfolio/single-slider.php:98
+#: inc/portfolio/single-standard.php:75
+msgid "Designer:"
+msgstr ""
+
+#: inc/portfolio/single-gallery.php:105
+msgid "Project Gallery:"
+msgstr ""
+
+#: template-parts/post/content-aside.php:24
+#: template-parts/post/content-audio.php:24
+#: template-parts/post/content-gallery.php:22
+#: template-parts/post/content-image.php:14
+#: template-parts/post/content-link.php:35
+#: template-parts/post/content-quote.php:18
+#: template-parts/post/content-video.php:20 template-parts/post/content.php:19
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/post/content-audio.php:38
+#: template-parts/post/content-gallery.php:36
+#: template-parts/post/content-image.php:28
+#: template-parts/post/content-quote.php:32
+#: template-parts/post/content-video.php:34 template-parts/post/content.php:33
+msgid "tags:"
+msgstr ""
+
+#: template-parts/post/content-none.php:17
+msgid "Ready to publish your first post?"
+msgstr ""
+
+#: template-parts/post/content-none.php:21
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/learndash/learndash-content.php:25
+#: template-parts/learndash/learndash-content.php:31
+#: template-parts/learndash/learndash-page.php:30
+#: template-parts/learndash/learndash-page.php:36
+msgid "Free"
+msgstr ""
+
+#: template-parts/learndash/learndash-content.php:48
+msgid "Completed"
+msgstr ""
+
+#: template-parts/learndash/learndash-content.php:98
+msgid "Enroll Now"
+msgstr ""
+
+#: template-parts/learndash/learndash-content.php:45
+#: template-parts/learndash/learndash-page.php:50
+msgid "Enrolled"
+msgstr ""
+
+#: template-parts/content-none.php:18 template-parts/post/content-none.php:17
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:31
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some \" "
+"\"different keywords."
+msgstr ""
+
+#: template-parts/learndash/learndash-page.php:66 template-parts/content.php:31
+#: template-parts/post/content-aside.php:24
+#: template-parts/post/content-audio.php:65
+#: template-parts/post/content-images.php:40
+#: template-parts/post/content-link.php:34
+#: template-parts/post/content-quote.php:64
+#: template-parts/post/content-video.php:55 template-parts/post/content.php:24
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: libs/theme-option/config.php:37 libs/theme-option/config.php:38
+msgid "weiboo Options"
+msgstr ""
+
+#: libs/theme-option/config.php:144 libs/theme-option/config.php:146
+msgid "<p>weiboo Theme</p>"
+msgstr ""
+
+#: libs/theme-option/config.php:165
+msgid "General Sections"
+msgstr ""
+
+#: libs/theme-option/config.php:172
+msgid "Upload Default Logo"
+msgstr ""
+
+#: libs/theme-option/config.php:173
+msgid "Upload your logo"
+msgstr ""
+
+#: libs/theme-option/config.php:181
+msgid "Upload Your Light"
+msgstr ""
+
+#: libs/theme-option/config.php:182
+msgid "Upload your light logo"
+msgstr ""
+
+#: libs/theme-option/config.php:190
+msgid "Upload Your Sticky Logo"
+msgstr ""
+
+#: libs/theme-option/config.php:191
+msgid "Upload your sticky logo"
+msgstr ""
+
+#: libs/theme-option/config.php:200 libs/theme-option/config.php:201
+msgid "Upload Favicon"
+msgstr ""
+
+#: libs/theme-option/config.php:208
+msgid "Sticky Menu"
+msgstr ""
+
+#: libs/theme-option/config.php:209
+msgid "You can show or hide sticky menu here"
+msgstr ""
+
+#: libs/theme-option/config.php:216
+msgid "Show Searh Icon at Menu Area"
+msgstr ""
+
+#: libs/theme-option/config.php:217
+msgid "You can show or hide search here"
+msgstr ""
+
+#: libs/theme-option/config.php:244
+msgid "Show off Canvas"
+msgstr ""
+
+#: libs/theme-option/config.php:245
+msgid "You can show or hide off canvas here"
+msgstr ""
+
+#: libs/theme-option/config.php:232
+msgid "Show Preloader"
+msgstr ""
+
+#: libs/theme-option/config.php:233
+msgid "You can show or hide preloader"
+msgstr ""
+
+#: libs/theme-option/config.php:240
+msgid "Go to Top"
+msgstr ""
+
+#: libs/theme-option/config.php:241
+msgid "You can show or hide here"
+msgstr ""
+
+#: libs/theme-option/config.php:253
+msgid "Header"
+msgstr ""
+
+#: libs/theme-option/config.php:264
+msgid "Header Top Area"
+msgstr ""
+
+#: libs/theme-option/config.php:265
+msgid "Header top area here"
+msgstr ""
+
+#: libs/theme-option/config.php:271
+msgid "Show Top Bar"
+msgstr ""
+
+#: libs/theme-option/config.php:272
+msgid "You can select top bar show or hide"
+msgstr ""
+
+#: libs/theme-option/config.php:278
+msgid "Top Bar Welcome Text"
+msgstr ""
+
+#: libs/theme-option/config.php:279
+msgid "Top Bar Welcome Text Add Here"
+msgstr ""
+
+#: libs/theme-option/config.php:289
+msgid "Show Social Icons at Header"
+msgstr ""
+
+#: libs/theme-option/config.php:290
+msgid "You can select Social Icons show or hide"
+msgstr ""
+
+#: libs/theme-option/config.php:229
+msgid "Header Area"
+msgstr ""
+
+#: libs/theme-option/config.php:300
+msgid "Header area here"
+msgstr ""
+
+#: libs/theme-option/config.php:306
+msgid "Phone Number Pre Text"
+msgstr ""
+
+#: libs/theme-option/config.php:307
+msgid "Enter Phone Number Pre Text"
+msgstr ""
+
+#: libs/theme-option/config.php:314
+msgid "Phone Number"
+msgstr ""
+
+#: libs/theme-option/config.php:315
+msgid "Enter Phone Number"
+msgstr ""
+
+#: libs/theme-option/config.php:322
+msgid "E-mail Pre Text"
+msgstr ""
+
+#: libs/theme-option/config.php:323
+msgid "Enter E-mail Pre Text"
+msgstr ""
+
+#: libs/theme-option/config.php:330
+msgid "Email Address"
+msgstr ""
+
+#: libs/theme-option/config.php:331
+msgid "Enter Email Address"
+msgstr ""
+
+#: libs/theme-option/config.php:340
+msgid "Location Title"
+msgstr ""
+
+#: libs/theme-option/config.php:341
+msgid "Pre Text"
+msgstr ""
+
+#: libs/theme-option/config.php:348
+msgid "Add Location"
+msgstr ""
+
+#: libs/theme-option/config.php:349
+msgid "Enter Address Here"
+msgstr ""
+
+#: libs/theme-option/config.php:356
+msgid "Quote Button Text"
+msgstr ""
+
+#: libs/theme-option/config.php:363
+msgid "Quote Button Link"
+msgstr ""
+
+#: libs/theme-option/config.php:364
+msgid "Enter Quote Button Link Here"
+msgstr ""
+
+#: libs/theme-option/config.php:370
+msgid "Login Button Link"
+msgstr ""
+
+#: libs/theme-option/config.php:371
+msgid "Enter Login Button Link Here"
+msgstr ""
+
+#: libs/theme-option/config.php:377
+msgid "Login Button Text"
+msgstr ""
+
+#: libs/theme-option/config.php:378
+msgid "Enter Login Text Link Here"
+msgstr ""
+
+#: libs/theme-option/config.php:387 libs/theme-option/config.php:396
+msgid "Header Layout"
+msgstr ""
+
+#: libs/theme-option/config.php:397
+msgid "Select header layout. Choose between 1, 2 ,3 or 4 layout."
+msgstr ""
+
+#: libs/theme-option/config.php:433
+msgid "Style"
+msgstr ""
+
+#: libs/theme-option/config.php:440
+msgid "Global Style"
+msgstr ""
+
+#: libs/theme-option/config.php:441
+msgid "Style your theme"
+msgstr ""
+
+#: libs/theme-option/config.php:448
+msgid "Body Backgroud Color"
+msgstr ""
+
+#: libs/theme-option/config.php:449
+msgid "Pick body background color"
+msgstr ""
+
+#: libs/theme-option/config.php:457
+msgid "Text Color"
+msgstr ""
+
+#: libs/theme-option/config.php:458 libs/theme-option/config.php:561
+#: libs/theme-option/config.php:580 libs/theme-option/config.php:570
+msgid "Pick text color"
+msgstr ""
+
+#: libs/theme-option/config.php:466
+msgid "Primary Color"
+msgstr ""
+
+#: libs/theme-option/config.php:467
+msgid "Select Primary Color."
+msgstr ""
+
+#: libs/theme-option/config.php:475
+msgid "Secondary Color"
+msgstr ""
+
+#: libs/theme-option/config.php:476
+msgid "Select Secondary Color."
+msgstr ""
+
+#: libs/theme-option/config.php:484
+msgid "Link Color"
+msgstr ""
+
+#: libs/theme-option/config.php:485
+msgid "Pick Link color"
+msgstr ""
+
+#: libs/theme-option/config.php:493
+msgid "Link Hover Color"
+msgstr ""
+
+#: libs/theme-option/config.php:494
+msgid "Pick link hover color"
+msgstr ""
+
+#: libs/theme-option/config.php:502
+msgid "Footer Bg Color"
+msgstr ""
+
+#: libs/theme-option/config.php:503
+msgid "Pick color."
+msgstr ""
+
+#: libs/theme-option/config.php:516
+msgid "Main Menu"
+msgstr ""
+
+#: libs/theme-option/config.php:517
+msgid "Main Menu Style Here"
+msgstr ""
+
+#: libs/theme-option/config.php:524
+msgid "Main Menu Text Color"
+msgstr ""
+
+#: libs/theme-option/config.php:525 libs/theme-option/config.php:534
+#: libs/theme-option/config.php:542
+msgid "Pick color"
+msgstr ""
+
+#: libs/theme-option/config.php:533
+msgid "Main Menu Text Hover Color"
+msgstr ""
+
+#: libs/theme-option/config.php:541
+msgid "Main Menu Text Active Color"
+msgstr ""
+
+#: libs/theme-option/config.php:550
+msgid "Dropdown Menu Background Color"
+msgstr ""
+
+#: libs/theme-option/config.php:551
+msgid "Pick bg color"
+msgstr ""
+
+#: libs/theme-option/config.php:560
+msgid "Dropdown Menu Text Color"
+msgstr ""
+
+#: libs/theme-option/config.php:569
+msgid "Dropdown Menu Hover Text Color"
+msgstr ""
+
+#: libs/theme-option/config.php:579
+msgid "Dropdown Menu item Hover Background Color"
+msgstr ""
+
+#: libs/theme-option/config.php:588
+msgid "Dropdown Menu item Seperate Border Color"
+msgstr ""
+
+#: libs/theme-option/config.php:589
+msgid "Pick a color"
+msgstr ""
+
+#: libs/theme-option/config.php:603
+msgid "Typography"
+msgstr ""
+
+#: libs/theme-option/config.php:605
+msgid "You can specify your body and heading font here"
+msgstr ""
+
+#: libs/theme-option/config.php:611
+msgid "Body Font"
+msgstr ""
+
+#: libs/theme-option/config.php:612
+msgid "Specify the body font properties."
+msgstr ""
+
+#: libs/theme-option/config.php:624
+msgid "Navigation Font"
+msgstr ""
+
+#: libs/theme-option/config.php:625
+msgid "Specify the menu font properties."
+msgstr ""
+
+#: libs/theme-option/config.php:641
+msgid "Heading H1"
+msgstr ""
+
+#: libs/theme-option/config.php:658
+msgid "Heading H2"
+msgstr ""
+
+#: libs/theme-option/config.php:676
+msgid "Heading H3"
+msgstr ""
+
+#: libs/theme-option/config.php:692
+msgid "Heading H4"
+msgstr ""
+
+#: libs/theme-option/config.php:713
+msgid "Heading H5"
+msgstr ""
+
+#: libs/theme-option/config.php:645 libs/theme-option/config.php:663
+#: libs/theme-option/config.php:679 libs/theme-option/config.php:700
+#: libs/theme-option/config.php:721 libs/theme-option/config.php:740
+msgid "Typography option with each property can be called individually."
+msgstr ""

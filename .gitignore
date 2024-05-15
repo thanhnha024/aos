@@ -1,0 +1,23 @@
+# Ignore thir-party
+package-lock.json
+
+node_modules
+
+# Ignore large folder and folder cache
+src/wp-content/*
+
+# wp-content/uploads
+
+!src/wp-content/themes
+
+!src/wp-content/plugins
+
+!src/wp-content/wp-*
+
+!src/wp-content/.htaccess
+
+!src/wp-content/index.php
+
+# Ignore docker file
+
+.env

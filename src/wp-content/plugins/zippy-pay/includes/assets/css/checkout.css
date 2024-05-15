@@ -1,0 +1,258 @@
+@media (max-width: 767px) {
+  .woocommerce-checkout #payment ul.payment_methods {
+    padding: 1em !important;
+  }
+  .woocommerce-checkout
+    #payment
+    .payment_box.payment_method_zippy_payment_getway {
+    padding: 10px 20px !important;
+  }
+}
+.popup_content {
+  background: #fff;
+}
+.popup_content h3 {
+  margin: 20px;
+}
+
+.adyen-checkout__voucher-result__actions {
+  margin: 0;
+  list-style: none;
+}
+.adyen-checkout__voucher-result__actions > li {
+  margin: 0 0 5px 0;
+}
+
+.adyen-checkout__button {
+  display: block;
+}
+
+.woocommerce-checkout
+  #payment
+  ul.payment_methods
+  li
+  img.adyen-checkout__card__cardNumber__brandIcon {
+  position: absolute;
+}
+.adyen-checkout__card__cvc__hint__wrapper {
+  margin: 0 10px;
+}
+
+.woocommerce-checkout #payment .adn-payment-dropdown {
+  width: 100%;
+  height: 35px;
+  background-color: transparent;
+  height: 40px;
+  background: 0 0;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.woocommerce-checkout
+  #payment
+  #zippy-container
+  .adyen-checkout__card__brands
+  .adyen-checkout__card__brands__brand-wrapper {
+  display: flex;
+}
+.woocommerce-checkout #payment #zippy-container iframe {
+  min-height: auto !important;
+}
+.woocommerce-checkout
+  #payment
+  #zippy-container
+  .adyen-checkout__payment-method {
+  margin-bottom: 8px;
+}
+
+.woocommerce-checkout
+  #payment
+  #zippy-container
+  .adyen-checkout__field
+  .adyen-checkout__field__exp-date_hint_wrapper {
+  margin: 0 10px;
+}
+.woocommerce-checkout #payment #zippy-container img {
+  margin: 0;
+}
+.woocommerce-checkout #payment #zippy-container button {
+  margin: 0 !important;
+  border: none !important;
+  background-color: none !important ;
+  padding: 4px !important;
+  font-size: 1em !important;
+  font-weight: 400 !important;
+  color: #00112c !important;
+  margin-right: 16px !important;
+}
+.woocommerce-checkout #payment .zippy-has-error {
+  color: red;
+  font-size: 14px;
+}
+
+/* Paynow Css  */
+
+.woocommerce-checkout
+  #payment
+  ul.payment_methods
+  .wc_payment_method.payment_method_zippy_paynow_payment
+  img {
+  display: block !important;
+  width: 100px !important;
+  height: 20px !important;
+  margin: 0px !important;
+}
+
+.woocommerce-checkout
+  #payment
+  ul.payment_methods
+  .wc_payment_method.payment_method_zippy_paynow_payment
+  label {
+  color: transparent !important;
+  font-size: 0px !important;
+}
+
+/* Popup paynow mobile  */
+#paynow-pop-up {
+  display: none;
+}
+.woocommerce-checkout #payment #paynow-pop-up.active .paynow-content {
+  display: none;
+}
+@media (max-width: 767px) {
+  .woocommerce-checkout #payment #paynow-pop-up {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9990;
+    justify-content: center;
+    align-items: center;
+  }
+  .woocommerce-checkout #payment #paynow-pop-up.active .paynow-content {
+    transform: translateY(0%);
+    display: flex;
+  }
+
+  .woocommerce-checkout #payment #paynow-pop-up .paynow-content {
+    background-color: rgb(255, 255, 255);
+    min-width: 300px;
+    max-height: 90%;
+    padding: 32px 20px 16px;
+    margin: 0px 12px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    transform: translateY(100%);
+  }
+
+  .woocommerce-checkout #payment #paynow-pop-up .paynow-content .top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .woocommerce-checkout #payment #paynow-pop-up .paynow-content .main-content {
+    margin: 24px 0px;
+    overflow: scroll;
+  }
+  .woocommerce-checkout
+    #payment
+    #paynow-pop-up
+    .paynow-content
+    .main-content::-webkit-scrollbar {
+    width: 0;
+  }
+  .woocommerce-checkout
+    #payment
+    #paynow-pop-up
+    .paynow-content
+    .main-content
+    img {
+    border-radius: 8px 8px 0px 0px;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .woocommerce-checkout
+    #payment
+    #paynow-pop-up
+    .paynow-content
+    .main-content
+    .content-item {
+    background-color: rgb(243, 246, 251);
+    margin: 12px 0px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .woocommerce-checkout
+    #payment
+    #paynow-pop-up
+    .paynow-content
+    .main-content
+    .content-item
+    .item-content {
+    background-color: rgb(243, 246, 251);
+    padding: 8px 12px;
+  }
+  .woocommerce-checkout
+    #payment
+    #paynow-pop-up
+    .paynow-content
+    .main-content
+    .content-item
+    .item-content
+    p {
+    margin: 0;
+  }
+  .woocommerce-checkout
+    #payment
+    #paynow-pop-up
+    .paynow-content
+    .bottom-content {
+    width: 100%;
+  }
+
+  .woocommerce-checkout
+    #payment
+    #paynow-pop-up
+    .paynow-content
+    .bottom-content
+    .paynow-button-cofirm {
+    width: 100%;
+    color: #fff;
+    background-color: #68c733;
+    height: 44px;
+    padding: 12px 16px;
+    font-size: 14px;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: bold;
+    line-height: 1.75;
+    border-radius: 8px;
+    letter-spacing: 0.02857em;
+    text-transform: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body.paynow-pop-up-open {
+    overflow: hidden !important;
+  }
+}
