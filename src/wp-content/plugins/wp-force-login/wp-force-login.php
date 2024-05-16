@@ -106,3 +106,15 @@ function v_forcelogin_load_textdomain() {
 	load_plugin_textdomain( 'wp-force-login', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
 add_action( 'plugins_loaded', 'v_forcelogin_load_textdomain' );
+
+
+function my_forcelogin_bypass( $bypass, $visited_url ) {
+
+	// Allow 'My Page' to be publicly accessible
+	if ( is_page('registration') ) {
+	  $bypass = true;
+	}
+  
+	return $bypass;
+  }
+  add_filter( 'v_forcelogin_bypass', 'my_forcelogin_bypass', 10, 2 );
