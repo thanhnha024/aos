@@ -663,15 +663,14 @@ function display_enquiry_cart_page()
 
     ob_start();
 ?>
-    <div class="enquiry-cart">
-        <h2>Enquiry Cart</h2>
+    <div class="enquiry-table">
         <table class="enquiry-cart-table">
             <thead>
                 <tr>
-                    
+
                     <th>Product</th>
                     <th>Quantity</th>
-                    <th>&nbsp;</th>
+                    <th>Remove</th>
                 </tr>
             </thead>
             <tbody>
@@ -683,21 +682,23 @@ function display_enquiry_cart_page()
                     $product_image = $product->get_image();
                     $quantity = $item['quantity'];
                 ?>
-                    <tr class="mini_cart_enquiry_item" data-item-key="<?php echo $key; ?>">
-                        <td class="enquiry-product-image">
-                            <a href="<?php echo $product_link; ?>">
-                                <?php echo $product_image; ?>
-                            </a>
+                    <tr class="table_cart_enquiry_item" data-item-key="<?php echo $key; ?>">
+                        <td>
+                            <div class="enquiry-product-image">
+                                <a href="<?php echo $product_link; ?>">
+                                    <?php echo $product_image; ?>
+                                </a>
+                            </div>
+                            <div class="enquiry-product-info">
+                                <a href="<?php echo $product_link; ?>">
+                                    <?php echo $product_name; ?>
+                                </a>
+                            </div>
                         </td>
-                        <td class="enquiry-product-info">
-                            <a href="<?php echo $product_link; ?>">
-                                <?php echo $product_name; ?>
-                            </a>
-                        </td>
-                        <td class="enquiry-product-quantity">
+                        <td>
                             <?php echo $quantity; ?> items
                         </td>
-                        <td class="enquiry-product-remove">
+                        <td >
                             <a href="#" class="remove remove-enquiry-item" aria-label="Remove <?php echo $product_name; ?> from cart" data-item-key="<?php echo $key; ?>">×</a>
                         </td>
                     </tr>
@@ -706,107 +707,21 @@ function display_enquiry_cart_page()
                 ?>
             </tbody>
         </table>
-        <div class="enquiry-cart-actions">
-            <form method="post" action="<?php echo admin_url('admin-post.php'); ?>">
-                <input type="hidden" name="action" value="send_enquiry_email">
-                <button type="submit" class="button enquiry-cart-button">Send Enquiry</button>
-            </form>
-        </div>
+
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('.remove-enquiry-item').forEach(function (button) {
-                button.addEventListener('click', function () {
-                    var itemKey = this.getAttribute('data-item-key');
-                    jQuery.ajax({
-                        url: wc_add_to_cart_params.ajax_url,
-                        type: 'POST',
-                        data: {
-                            action: 'remove_enquiry_item',
-                            item_key: itemKey
-                        },
-                        success: function (response) {
-                            // Remove the table row
-                            var row = document.querySelector('.mini_cart_enquiry_item[data-item-key="' + itemKey + '"]');
-                            if (row) {
-                                row.remove();
-                            }
-                            // Check if the cart is empty
-                            if (document.querySelectorAll('.mini_cart_enquiry_item').length === 0) {
-                                document.querySelector('.enquiry-cart').innerHTML = 'Your enquiry cart is empty.';
-                            }
-                        },
-                        error: function (error) {
-                            console.error('Error removing item from enquiry cart:', error);
-                        }
-                    });
-                });
-            });
-        });
-    </script>
+
     <style>
-        /* CSS styles remain unchanged */
+
+        .enquiry-product-image img {
+            max-width: 70px;
+            height: auto;
+        }
+.table_cart_enquiry_item td{
+    width: 100%;
+}
     </style>
 <?php
     return ob_get_clean();
 }
 
 add_shortcode('display_enquiry_cart_page', 'display_enquiry_cart_page');
-
-// AJAX handler to remove an item from the enquiry cart
-function remove_enquiry_item_table()
-{
-    $item_key = isset($_POST['item_key']) ? sanitize_text_field($_POST['item_key']) : '';
-    if ($item_key === '') {
-        wp_send_json_error(array('message' => 'Invalid item key.'));
-    }
-
-    $enquiry_cart = WC()->session->get('enquiry_cart', array());
-    if (isset($enquiry_cart[$item_key])) {
-        unset($enquiry_cart[$item_key]);
-        WC()->session->set('enquiry_cart', $enquiry_cart);
-        wp_send_json_success();
-    } else {
-        wp_send_json_error(array('message' => 'Item not found in the enquiry cart.'));
-    }
-}
-add_action('wp_ajax_remove_enquiry_item', 'remove_enquiry_item_table');
-add_action('wp_ajax_nopriv_remove_enquiry_item', 'remove_enquiry_item_table');
-
-// Action hook for sending enquiry email
-function send_enquiry_email()
-{
-    $enquiry_cart = WC()->session->get('enquiry_cart', array());
-
-    if (empty($enquiry_cart)) {
-        wp_redirect(home_url()); // Redirect to homepage if cart is empty
-        exit;
-    }
-
-    $to = get_option('admin_email');
-    $subject = 'Enquiry from Enquiry Cart';
-    $headers[] = 'Content-Type: text/html; charset=UTF-8';
-    $headers[] = 'From: Enquiry Cart <no-reply@' . $_SERVER['HTTP_HOST'] . '>';
-
-    $message = '<p>The following products have been enquired:</p><ul>';
-    foreach ($enquiry_cart as $key => $item) {
-        $product = wc_get_product($item['variation_id']);
-        $product_name = $product->get_name();
-        $product_link = $product->get_permalink();
-        $quantity = $item['quantity'];
-
-        $message .= '<li><a href="' . $product_link . '">' . $product_name . '</a> - ' . $quantity . ' items</li>';
-    }
-    $message .= '</ul>';
-
-    $sent = wp_mail($to, $subject, $message, $headers);
-
-    if ($sent) {
-        wc()->session->set('enquiry_cart', array()); // Clear enquiry cart after sending email
-        wp_redirect(home_url()); // Redirect to homepage after successful email send
-    } else {
-        wp_die('Error sending enquiry email.');
-    }
-}
-add_action('admin_post_send_enquiry_email', 'send_enquiry_email');
-add_action('admin_post_nopriv_send_enquiry_email', 'send_enquiry_email');
